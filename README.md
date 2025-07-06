@@ -46,9 +46,9 @@ cd event-now
 
 ### 2. Modo “producción” integrado
 
-cd backend
-chmod +x scripts/start.sh
-./scripts/start.sh
+- cd backend
+- chmod +x scripts/start.sh
+- ./scripts/start.sh
 
 Esto:
 
@@ -60,9 +60,7 @@ Copia build/static/js, build/static/css e index.html a backend/static/{js,css}.
 
 Arranca Flask en http://127.0.0.1:5000.
 
-### 3. Desarrollo separado
-
-#### Frontend (Hot-Reload)
+### 3. Lanzar solo Frontend
 
 cd frontend
 npm install
@@ -70,23 +68,12 @@ npm start
 
 Servidor CRA en http://localhost:3000 con HMR.
 
-#### Backend (Auto-Reload)
-
-cd backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-export FLASK_ENV=development
-flask run --reload
-
-Flask en http://127.0.0.1:5000, recarga al cambiar código Python o plantillas Jinja.
-
 ## ⚙️ Configuración
 
 #### Crear .env dentro de /backend.
 
-EVENTS_PATH=events.json
-JSON_PATH=reservations.json
+- EVENTS_PATH=events.json
+- JSON_PATH=reservations.json
 
 ## 📋 Instrucciones de uso
 
@@ -96,8 +83,8 @@ Utiliza el componente Filter para filtrar por texto, ciudad o fecha.
 
 ### Reservar entradas
 
-Completa el formulario ReservationForm.
-Recibirás mensajes de éxito o error (AntD message).
+- Completa el formulario ReservationForm.
+- Recibirás mensajes de éxito o error (AntD message).
 
 ### Ver reservas
 

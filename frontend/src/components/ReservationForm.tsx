@@ -115,7 +115,7 @@ export default function ReservationForm({
 
           <Form.Item
             name="date"
-            label="Fecha y hora"
+            label="Fecha"
             rules={[{ required: true, message: "Fecha requerida" }]}
           >
             <DatePicker style={{ width: "100%" }} />
