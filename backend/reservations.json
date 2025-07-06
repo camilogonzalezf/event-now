@@ -1,0 +1,9 @@
+[
+  {
+    "eventId": 1,
+    "name": "Nuevo",
+    "email": "este@mail.com",
+    "date": "2025-07-03T05:00:00.000Z",
+    "tickets": 10
+  }
+]

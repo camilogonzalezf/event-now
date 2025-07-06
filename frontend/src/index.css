@@ -1,0 +1,45 @@
+/* Global styles with Roboto font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Apply Roboto to all elements */
+html,
+body,
+#root {
+  font-family: "Roboto", sans-serif;
+  background-color: #0d0e06;
+}
+
+/* Ensure all text elements inherit the font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+button,
+input,
+textarea,
+select,
+label {
+  font-family: "Roboto", sans-serif;
+}

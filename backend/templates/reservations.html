@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reservas - EventNow</title>
+    <style>
+      body {
+        background-color: #0d0e06;
+        color: #d3d3d3;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #cf3c44;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      table {
+        background-color: white;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        background-color: #cf3c44;
+        color: white;
+        padding: 12px 8px;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      td {
+        padding: 10px 8px;
+        color: #666;
+        border-bottom: 1px solid #eee;
+      }
+
+      tr:hover {
+        background-color: #f8f8f8;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .back-button {
+        display: inline-block;
+        background-color: #ebb434;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        margin: 20px auto;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #ebb43f;
+      }
+
+      .button-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /* Media queries para pantallas pequeñas */
+      @media (max-width: 900px) {
+        body {
+          font-size: 18px;
+          margin: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        table {
+          font-size: 16px;
+        }
+
+        th,
+        td {
+          padding: 8px 4px;
+          font-size: 14px;
+        }
+
+        .back-button {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Reservas Realizadas</h1>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Evento ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Fecha</th>
+                <th>Entradas</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for r in reservations %}
+              <tr>
+                <td>{{ r.eventId }}</td>
+                <td>{{ r.name }}</td>
+                <td>{{ r.email }}</td>
+                <td>{{ r.date }}</td>
+                <td>{{ r.tickets }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <nav class="button-container">
+        <a href="/" class="back-button">← Volver al Inicio</a>
+      </nav>
+    </main>
+  </body>
+</html>

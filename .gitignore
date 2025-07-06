@@ -1,0 +1,16 @@
+# Backend
+.venv/
+__pycache__/
+*.pyc
+static
+
+# Node
+node_modules/
+build/
+
+# Entorno
+.env_local
+
+# Frontend
+#package-lock.json 
+package-lock.json

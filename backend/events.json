@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Concierto Sinfónico",
+    "city": "Bogotá",
+    "date": "2025-08-15T19:30:00",
+    "description": "Orquesta filarmónica en el teatro nacional."
+  },
+  {
+    "id": 2,
+    "name": "Feria del Libro",
+    "city": "Medellín",
+    "date": "2025-09-05T10:00:00",
+    "description": "Encuentro anual de editoriales y autores."
+  },
+  {
+    "id": 3,
+    "name": "Festival de Jazz",
+    "city": "Cartagena",
+    "date": "2025-10-12T18:00:00",
+    "description": "Bandas internacionales de Jazz en la ciudad amurallada."
+  },
+  {
+    "id": 4,
+    "name": "Exposición de Arte Contemporáneo",
+    "city": "Cali",
+    "date": "2025-11-20T09:00:00",
+    "description": "Muestra de artistas colombianos contemporáneos en el museo de arte moderno."
+  },
+  {
+    "id": 5,
+    "name": "Festival Gastronómico",
+    "city": "Barranquilla",
+    "date": "2025-12-08T12:00:00",
+    "description": "Celebración de la cocina caribeña con chefs reconocidos internacionalmente."
+  }
+]
