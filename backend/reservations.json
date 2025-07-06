@@ -5,5 +5,12 @@
     "email": "este@mail.com",
     "date": "2025-07-03T05:00:00.000Z",
     "tickets": 10
+  },
+  {
+    "eventId": 4,
+    "name": "Julian Velez",
+    "email": "camilo@gmail.com",
+    "date": "2025-07-09T05:00:00.000Z",
+    "tickets": 5
   }
 ]
