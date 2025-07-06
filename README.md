@@ -11,40 +11,42 @@ EventNow es un portal web que permite a sus usuarios **buscar eventos**, **reser
 
 ## 📂 Estructura del proyecto
 
+```
 event-now/
 ├── backend/
-│ ├── app.py
-│ ├── config.py
-│ ├── events.json
-│ ├── reservations.json
-│ ├── requirements.txt
-│ ├── static/
-│ │ ├── js/ ← bundles React (JS + index.html)
-│ │ └── css/ ← bundles React (CSS)
-│ │ └── images/ ← Images React
-│ └── scripts/
-│ └── start.sh ← instala deps, compila y arranca Flask
+│   ├── app.py
+│   ├── config.py
+│   ├── events.json
+│   ├── reservations.json
+│   ├── requirements.txt
+│   ├── static/
+│   │   ├── js/ ← bundles React (JS + index.html)
+│   │   ├── css/ ← bundles React (CSS)
+│   │   └── images/ ← Images React
+│   └── scripts/
+│       └── start.sh ← instala deps, compila y arranca Flask
 └── frontend/
-├── package.json
-├── tsconfig.json
-├── public/
-└── src/
-├── services/ ← llamadas API y manejo de errores
-├── hooks/ ← lógica de negocio (useManageEvents)
-├── components/
-│ ├── Filter.tsx
-│ └── ReservationForm.tsx
-├── App.tsx
-└── index.tsx
+    ├── package.json
+    ├── tsconfig.json
+    ├── public/
+    └── src/
+        ├── services/ ← llamadas API y manejo de errores
+        ├── hooks/ ← lógica de negocio (useManageEvents)
+        ├── components/
+        │   ├── Filter.tsx
+        │   └── ReservationForm.tsx
+        ├── App.tsx
+        └── index.tsx
+```
 
 ## 🛠️ Instalación y ejecución
 
 ### 1. Clonar repositorio
 
-git clone <repo-url> event-now
+git clone git@github.com:camilogonzalezf/event-now.git
 cd event-now
 
-### 2. Modo “producción” integrado
+### 2. Modo "producción" integrado
 
 cd backend
 chmod +x scripts/start.sh
