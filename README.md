@@ -34,6 +34,7 @@ event-now/
         ├── hooks/ ← lógica de negocio (useManageEvents)
         ├── components/
         │   ├── Filter.tsx
+        │   ├── FiltersTable.tsx
         │   └── ReservationForm.tsx
         ├── App.tsx
         └── index.tsx
